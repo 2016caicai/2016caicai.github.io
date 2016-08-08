@@ -1,15 +1,13 @@
 ---
 layout: post
-title: 字符打造的图像迷宫：ASCII 的艺术与 jp2a 的技术
-categories: [blog ]
+title: mui 
+categories: [mui ]
 tags: [Tech, Linux, ]
-description: 看一看字符世界的優美和神奇
+description: mui
 ---
 
 
-本文将分享一个用于 jpg 图片转换为 ASCII 图像的命令行工具 jp2a。
-
-嗯？还是先来说说 ASCII 具体是怎么一回事吧。
+mui
 
 ## ASCII
 
