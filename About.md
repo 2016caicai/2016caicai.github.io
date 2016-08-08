@@ -6,7 +6,7 @@ header-img: "img/lala.jpg"
 ---
 
 <center>
-    <p><img src="http://dreamofbook.qiniudn.com/Zero.png" align="center"></p>
+    <p><img src="img/lala.jpg" align="center"></p>
 </center>
 
 My name is RICK, 94, unmarried, like a little front end technology, is a little house, like to eat
@@ -16,6 +16,4 @@ My name is RICK, 94, unmarried, like a little front end technology, is a little 
 
 > Live long and prosper
 
-<center>
-    <p><img src="http://dreamofbook.qiniudn.com/hacker.png" align="center"></p>
-</center>
+I have a dream to marry with my fiancee after two year,Come on, lucky boy!
