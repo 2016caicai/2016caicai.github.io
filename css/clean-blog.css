@@ -49,9 +49,15 @@ blockquote p {
   margin: 0;
 }
 .intro-header .site-heading h1:hover{
+  transition:all 1s ease-in-out;
   transform: skewX(90deg);
+  -webkit-transform: -webkit-skewX(90deg);
+  -moz-transform: -moz-skewX(90deg);
   color: rgba(245, 245, 245, .5);
   transform: skewX(0deg);
+  -webkit-transform: -webkit-skewX(0deg);
+  -moz-transform: -moz-skewX(0deg);
+  
 }
 @media screen and (max-width: 768px) {
   select {
