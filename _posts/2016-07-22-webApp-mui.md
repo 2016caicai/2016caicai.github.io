@@ -2,7 +2,7 @@
 layout: post
 title: mui 
 categories: [mui ]
-tags: [Tech, Linux, ]
+tags: [mui ]
 description: mui
 ---
 
