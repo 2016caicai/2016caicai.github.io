@@ -6,7 +6,7 @@ header-img: "img/lala.jpg"
 ---
 
 <center>
-    <p><img src="img/lala.jpg" align="center"></p>
+    <p><img src="img/lala.png" style="width:50%;border-radius:50%;" align="center"></p>
 </center>
 
 My name is RICK, 94, unmarried, like a little front end technology, is a little house, like to eat
