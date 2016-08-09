@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "About"
+title: "关于我"
 description: "欢迎来到我的兔窝"
 header-img: "img/lala.jpg"
 ---

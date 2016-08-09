@@ -1,6 +1,8 @@
-# Microdust 微尘
+# czr Rick
 
-This is a blog created by Azeril. The blog is live at [azeril.me](http://azeril.me/).
+This is a blog created by czr. The blog is fork from arize ,thanks to share this theme！
+
+
 
 ## Thanks
 

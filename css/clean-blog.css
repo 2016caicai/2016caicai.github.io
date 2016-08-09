@@ -48,6 +48,11 @@ blockquote {
 blockquote p {
   margin: 0;
 }
+.intro-header .site-heading h1:hover{
+  transform: skewX(90deg);
+  color: rgba(245, 245, 245, .5);
+  transform: skewX(0deg);
+}
 @media screen and (max-width: 768px) {
   select {
     -webkit-appearance: none;
