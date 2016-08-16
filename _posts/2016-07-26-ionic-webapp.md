@@ -21,12 +21,12 @@ ionic plugin add https://github.com/mrwutong/cordova-qdc-baidu-location --variab
 cordova plugin add cordova-plugin-geolocation
 
 3. html页面：
-> `` `
+```html
     <input  type="text" name="city" ng-model="serchval.address"  placeholder="请输入地点" style="position: absolute;height: 40px;top: 5px;left:5%;z-index: 998;background: rgba(12,12,12,.5);width: 90%;padding: 1rem;  color:#ffffff;"/>
     <button id="searchbtn" ng-click="run();" class="ion-search" style="width: 15%;height: 40px;position: absolute;top: 5px;right: 5%;font-size:2rem ;background:rgba(12,12,12,.5);color: #ffffff;z-index: 999 ;border: none; " ></button>
     <div id="allmap" style="height: 100%;width:100%; "></div>
-` ``
-> 记得引入地图js资源
+```
+4. 记得引入地图js资源
 ```javascript
     <script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&ak=CcZMawdycw5SPGc7rKXpokqR"></script>
     <script type="text/javascript" src="http://developer.baidu.com/map/jsdemo/demo/convertor.js"></script>
