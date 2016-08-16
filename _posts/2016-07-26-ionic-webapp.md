@@ -26,30 +26,29 @@ cordova plugin add cordova-plugin-geolocation
     <button id="searchbtn" ng-click="run();" class="ion-search" style="width: 15%;height: 40px;position: absolute;top: 5px;right: 5%;font-size:2rem ;background:rgba(12,12,12,.5);color: #ffffff;z-index: 999 ;border: none; " ></button>
     <div id="allmap" style="height: 100%;width:100%; "></div>
 ```
-### 记得引入地图js资源
+记得引入地图js资源
 ```javascript
     <script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&ak=CcZMawdycw5SPGc7rKXpokqR"></script>
     <script type="text/javascript" src="http://developer.baidu.com/map/jsdemo/demo/convertor.js"></script>
 ```
 
-## 记一个小坑
+ 记一个小坑
 使用ionic的指令，相当与有了一层scope,所以在指令上面在加上双向数据绑定只能用对象模式
 ```javascript
     $scope.serchval={
              address:null
          };
 ```
-	### 如果使用变量就会变成单向数据绑定
+如果使用变量就会变成单向数据绑定
 ```javascript
-    $scope.serchval="guangzhou";
-         
+    $scope.serchval="guangzhou";     
 ```
-	## 回到正题
+## 回到正题
 
-	### 实例化百度地图
-	![](/images/ionic/ionic_map2.jpg "ionic_map2 ionic")
-	### 绑定搜索框事件
-	![](/images/ionic/ionic_map3.jpg "ionic_map3 ionic")
+实例化百度地图
+![](/images/ionic/ionic_map2.jpg "ionic_map2 ionic")
+### 绑定搜索框事件
+![](/images/ionic/ionic_map3.jpg "ionic_map3 ionic")
 	上面有一个run函数ng-click到btn;记得注入$ionicLoading，才能使用警告框！
 	下面是判断设备是否支持定位，获得首次进入会获得当前位置。
 ```javascript
