@@ -21,7 +21,7 @@ ionic plugin add https://github.com/mrwutong/cordova-qdc-baidu-location --variab
 cordova plugin add cordova-plugin-geolocation
 
 3. html页面：
-```html
+> ```html
     <input  type="text" name="city" ng-model="serchval.address"  placeholder="请输入地点" style="position: absolute;height: 40px;top: 5px;left:5%;z-index: 998;background: rgba(12,12,12,.5);width: 90%;padding: 1rem;  color:#ffffff;"/>
     <button id="searchbtn" ng-click="run();" class="ion-search" style="width: 15%;height: 40px;position: absolute;top: 5px;right: 5%;font-size:2rem ;background:rgba(12,12,12,.5);color: #ffffff;z-index: 999 ;border: none; " ></button>
     <div id="allmap" style="height: 100%;width:100%; "></div>
@@ -43,9 +43,9 @@ cordova plugin add cordova-plugin-geolocation
 ```javascript
     $scope.serchval="guangzhou";     
 ```
-> 回到正题
+ 
 
-实例化百度地图
+>回到正题 实例化百度地图
 ![](/images/ionic/ionic_map2.jpg "ionic_map2 ionic")
 绑定搜索框事件
 ![](/images/ionic/ionic_map3.jpg "ionic_map3 ionic")
