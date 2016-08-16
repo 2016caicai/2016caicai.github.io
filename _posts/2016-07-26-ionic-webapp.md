@@ -8,9 +8,9 @@ description: ionic
 
 ## 来张效果图先
 ![](/images/ionic/ionic_map.jpg "ionic_map ionic")
-(居然定位不到子午线，百度还是太low了。)
-## 步骤
+(居然定位不到子午线，百度还是太low了)
 
+## 步骤
 1. 首先是下载百度插件
 * ionic plugin add https://github.com/mrwutong/cordova-qdc-baidu-location --variable API_KEY="你申请的百度地图钥匙"(直接进百度开发者注册就可以申请了，free)
 
@@ -18,20 +18,19 @@ description: ionic
 cordova plugin add cordova-plugin-geolocation
 
 3.html页面
-* ```
+ ```
     <input  type="text" name="city" ng-model="serchval.address"  placeholder="请输入地点" style="position: absolute;height: 40px;top: 5px;left:5%;z-index: 998;background: rgba(12,12,12,.5);width: 90%;padding: 1rem;  color:#ffffff;"/>
     <button id="searchbtn" ng-click="run();" class="ion-search" style="width: 15%;height: 40px;position: absolute;top: 5px;right: 5%;font-size:2rem ;background:rgba(12,12,12,.5);color: #ffffff;z-index: 999 ;border: none; " ></button>
     <div id="allmap" style="height: 100%;width:100%; "></div>
 ```
 4. 记得引入地图js资源
-* ```javascript
+ ```javascript
     <script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&ak=CcZMawdycw5SPGc7rKXpokqR"></script>
     <script type="text/javascript" src="http://developer.baidu.com/map/jsdemo/demo/convertor.js"></script>
 ```
-
 > 记一个小坑
-使用ionic的指令，相当与有了一层scope,所以在指令上面在加上双向数据绑定只能用对象模式
-```javascript
+5. 使用ionic的指令，相当与有了一层scope,所以在指令上面在加上双向数据绑定只能用对象模式
+* ```javascript
     $scope.serchval={
              address:null
          };
@@ -40,14 +39,13 @@ cordova plugin add cordova-plugin-geolocation
 ```javascript
     $scope.serchval="guangzhou";     
 ```
- 
-
-> 回到正题 实例化百度地图
+6. 回到正题 
+* 实例化百度地图
 ![](/images/ionic/ionic_map2.jpg "ionic_map2 ionic")
-绑定搜索框事件
+* 绑定搜索框事件
 ![](/images/ionic/ionic_map3.jpg "ionic_map3 ionic")
-	上面有一个run函数ng-click到btn;记得注入$ionicLoading，才能使用警告框！
-	下面是判断设备是否支持定位，获得首次进入会获得当前位置。
+上面有一个run函数ng-click到btn;记得注入$ionicLoading，才能使用警告框！
+下面是判断设备是否支持定位，获得首次进入会获得当前位置。
 ```javascript
 	//检测设备是否支持定位功能
         if(window.navigator.geolocation){
