@@ -32,5 +32,6 @@ header-img: "img/autumn.jpg"
 
 [ClipConverter](http://www.clipconverter.cc/) ### 转换和下载 Youtube 视频
 
+[ClipConverter](https://tinypng.com/) ### 压缩图片（只支持jpg和png）
 
 
