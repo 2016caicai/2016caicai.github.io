@@ -26,8 +26,8 @@ description: node
         </div>
     </div>
 ```
-## js文件
-```
+    ## js文件
+    ```
     //建立连接
     var ws = new WebSocket("ws://192.168.2.242:8181");
     var nickname = "";
@@ -84,6 +84,7 @@ description: node
     
 ```
 ## 服务器端
+
 ```
     var WebSocket = require('ws');
 var WebSocketServer = WebSocket.Server;
