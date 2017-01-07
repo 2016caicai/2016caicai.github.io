@@ -17,7 +17,7 @@ express比较简单
 	npm init (配置package)
 
 ```
-[这是我的项目地址](https://github.com/2016caicai/express-mongo)
+
 
 mongoose 先去[官网](http://www.mongodb.org/)下载mis安装包，一路next;
 ```
@@ -25,3 +25,7 @@ mongoose 先去[官网](http://www.mongodb.org/)下载mis安装包，一路next;
 	2.解压mongodb-win32-i386-1.8.1.zip到D:/MongoDB
 	3.在D:/MongoDBStart下面新建MongoDB.bat，内容写入mongod --dbpath D:\MongoDBData，每次只要双击这个就可以启动mongo了
 	4.配置环境变量D:/MongoDB/bin/到系统环境变量中
+```
+
+
+[这是我的项目地址](https://github.com/2016caicai/express-mongo)
