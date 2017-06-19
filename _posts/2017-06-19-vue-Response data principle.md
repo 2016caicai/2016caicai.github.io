@@ -40,7 +40,7 @@ vue 构造器对指定id容器进行绑定
   })
 ```  
 劫持所有的app下面的所有node元素
-> 使用fragment把所有的node元素使用firstChild获取后识别属性重新赋值node内容后重新组装回app下面。
+使用fragment把所有的node元素使用firstChild获取后识别属性重新赋值node内容后重新组装回app下面。
 ```
   function nodeToFragment (node,vm) {
     var flag = document.createDocumentFragment();
@@ -145,6 +145,4 @@ vue 构造器对指定id容器进行绑定
     }
   }
 ```
-
-
-![最终效果](/images/vue/vue.jpg "vue")
+![最终效果](/images/vue/vue.png "vue")
