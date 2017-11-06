@@ -16,4 +16,3 @@ My name is RICK, 94, unmarried, like a little front end technology, is a little 
 
 > Live long and prosper
 
-I have a dream to marry with my fiancee after two year,Come on, lucky boy!
