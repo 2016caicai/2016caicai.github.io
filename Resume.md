@@ -45,7 +45,7 @@ vue+koa前后端分离架构，主要负责监控端的前后端开发，原理�
  使用Hbulider打包，mui框架做hybridAPP, 主要负责整个app的业务编写以及跨平台兼容性处理。
 
 **2**. xxx电商  
- 使用jq+bootstarp开发移动端的简单电商页面。
+ 使用jq+bootstarp开发移动端的简单电商页面，使用rem+meta viewport做页面字体自适应。
 
 ### 其他信息
 在校担任信息中心网络部部长 获得CET-4英语证书
