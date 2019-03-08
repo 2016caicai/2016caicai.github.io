@@ -8,10 +8,11 @@
 
 首先祝所有的女同胞节日快乐！
 
->## 背景
+>### 背景
+
 项目中有一个下载图片的需求，大概就是浓缩一个右键另存为的功能吧。。。
 
->## 问题
+>### 问题
 
 网上一堆使用a标签同时设置download属性，先不说有没有用，先上兼容图<br>
 ![download 兼容](/images/js/download1.png "js")<br>
@@ -19,7 +20,7 @@
 <label style="color:gray">(ps:亲测a标签加上download, 假如href是网络资源还是会触发浏览器默认打开图片??)</label><br>
 
 
->## 解决方案
+>### 解决方案
 
 1.首先使用[canvas.toDataURL](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toDataURL)把网络图片转化为base64,这里需要注意使用这个方法只对同源文件有作业，因为canvas限制了跨域资源的访问;<br>
 <label style="color:gray"> (这里只能使用cross跨域设置解决，但是这个配置需要前后台一起配置，前端资源配置img.setAttribute("crossOrigin",'anonymous/白名单')，后台设置跨域*/白名名单)</label><br>
