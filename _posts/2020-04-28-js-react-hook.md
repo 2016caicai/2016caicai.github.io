@@ -7,15 +7,16 @@
 ---
 
 
->### 背景
+### 背景
 
-自从使用react hook后，基本上数据都封在了hook内部，或者是通过props来进行传递，无独有偶，在我做看板可视化的时候，我把看板设计成了两层tab的结构，意味着两层路由的情况，数据有内容有交叉，也无法通过props来传递，这时候就想到组件通信的第三种方式 第三方状态管理<br>
+自从使用react hook后，基本上数据都封在了hook内部，或者是通过props来进行传递，无独有偶，在我做看板可视化的时候，我把看板设计成了两层tab的结构，意味着两层路由的情况，数据的内容有交叉，也无法通过props来传递，同使时每次路由切换意味着数据的重新加载，这时候就想到组件通信的第三种方式 第三方状态管理<br>
 常用的第三方状态管理 比如 <code>redux</code> <code>mobx</code><br>
 就在我纠结于要选哪个的时候， 我看到了...<br>
 ![images](/images/js/reacthook/usereducer.png)<br>
 <code>React.createContext</code> <code>useContext</code> <code>useReducer</code>是 React 16.8 引入的新 API<br>
 
->### React.createContext
+### React.createContext
+
 <code>React.createContext</code>： 返回一个上下文对象，里面包含一个Provider组件，使用这个组件可以解决旧Context无法订阅上下文变化的问题
 首先创建Context
 ```
@@ -32,7 +33,9 @@
 
   export default React.createContext(initValue)
 ```
+
 在上层组件使用Porvider订阅上下文
+
 ```
 <Context.Provider value={[store, dispatch]}>
   <MyComponent />
@@ -46,11 +49,13 @@
 ```
 这里 <code>MyComponent</code> 和兄弟路由可以通过获取<code>Context</code>来共享store,和触发dispatch
 
->### useReducer
+### useReducer
+
 <code>useReducer</code>：主要实现简单的store 和 dispatch,也是useState的底层实现。
 具体使用如下：<code>const [state, dispatch] = useReducer(reducer, initialArg, init);</code>
 
 这里的reducer也和我们平时写的reducer一样
+
 ```
   const [store, dispatch] = useReducer(function (state: any, action: any) {
     switch(action.type) {
@@ -87,11 +92,12 @@ const reducer = useRef(function (state: any, action: any) {
 ```
 万能的useRef用来缓存reducer;
 
+### useContext
 
->### useContext
 <code>useContext</code>：可访问全局状态，避免一层层的传递状态
 
 在目标组件内使用
+
 ```
   const [store = { running: [], cache: {} }, dispatch] = useContext(Context);
 ```
