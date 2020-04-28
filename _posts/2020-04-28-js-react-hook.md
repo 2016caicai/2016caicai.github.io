@@ -105,7 +105,7 @@ const reducer = useRef(function (state: any, action: any) {
 ### 最后效果
 
 ![效果](/images/js/reacthook/effect.gif)
-所有数据由上层路由管理，切换路由也可以直接由store中提取缓存数据，算是一丢丢的性能优化
+所有数据由上层路由管理，实现了数据的共享，切换路由也可以直接由store中提取缓存数据，响应速度和用户体验都有了大的提升
 
 
 
